@@ -1,0 +1,14 @@
+ul { list-style: disc outside; margin-left: 2em; } /* IE can't handle :before and :after */
+ul li { text-indent: 0; margin-left: 0; }
+legend { margin-bottom: 1.6em; } /* IE form margin bug */
+sup, sub { font-size: 100%; } /* IE superscript & subscript bug */
+blockquote p, blockquote ul, blockquote ol, blockquote dl, blockquote pre, blockquote address, blockquote table, blockquote form, blockquote h1, blockquote h2, blockquote h3, blockquote h4, blockquote h5, blockquote h6 { margin-top: .8em; margin-bottom: .8em; } /* IE can't handle :first-child */
+* html textarea, * html input { cursor:auto; } /* IE < 7 form fix */
+input[type='submit'], input[type='button'] { padding: 0; } /* IE 7 button fix */
+legend+* { margin-top: 0; } /* we already added legend margin */
+a abbr, a acronym { text-decoration: underline; } /* IE 7 bug */
+* html .clearfix {height: 1%;} /* IE 6 clearfix */
+* html .m5cssAlignImageLeft { float:left; margin:0 1em 1em 0}
+* html .m5cssAlignImageRight { float:right; margin:0 0 1em 1em}
+* html img {z-index: expression(runtimeStyle.zIndex = 1, align && "left" == align.toLowerCase() ? (className += " m5cssAlignImageLeft") : 0 ) }
+* html img {scrollbar-face-color: expression(runtimeStyle.scrollbarFaceColor = 1, align && "right" == align.toLowerCase() ? (className += " m5cssAlignImageRight") : 0 ) }

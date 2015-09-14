@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+	<channel>
+		<title>HTML/CSS Evangelist</title>
+		<description>Размышления на тему Front-end</description>
+		<link>http://banzalik.ru</link>
+		<atom:link href="http://banzalik.ru/feed.xml" rel="self" type="application/rss+xml" />
+		
+			<item>
+				<title>Приложения для соцсетей. Универсальные приложения на БЭМ.</title>
+				
+				
+					<description>&lt;p&gt;5 мая в Киеве я впервые выступал на &lt;a href=&quot;http://events.yandex.ru/&quot; target=&quot;_blank&quot;&gt;Яндекс.Субботнике&lt;/a&gt;.&lt;/p&gt;
+</description>
+				
+				<pubDate>Thu, 12 Jul 2012 00:00:00 +0300</pubDate>
+				<link>http://banzalik.ru/social-app-with-be/</link>
+				<guid isPermaLink="true">http://banzalik.ru/social-app-with-be/</guid>
+			</item>
+		
+			<item>
+				<title>Еще один способ использования свойства zoom</title>
+				
+				
+					<description>&lt;p&gt;В 99.9% случаев CSS свойство zoom используется верстальщиками для активации hasLayout в IE. Я хочу рассказать о том 0.01% проценте использования этого свойства.&lt;br&gt;
+В те времена, когда трава была зеленее, миром правил IE, а дизайнеры учились рисовать сайты- приходилось часто сталкиваться с неоднозначными дизайнерскими решениями.&lt;br&gt;
+Одним из этих решений &amp;#8211; кастомные скроллбары, например такие:&lt;br&gt;
+&lt;a href=&quot;http://banzalik.ru/labs/scroll/&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;http://banzalik.ru/labs/scroll/scroll.png&quot; alt=&quot;маленький скролл&quot; /&gt;&lt;/a&gt;&lt;br&gt;
+&amp;lt;!--more--&amp;gt;&lt;/p&gt;
+</description>
+				
+				<pubDate>Sat, 10 Dec 2011 00:00:00 +0200</pubDate>
+				<link>http://banzalik.ru/zoom-ie-scroll/</link>
+				<guid isPermaLink="true">http://banzalik.ru/zoom-ie-scroll/</guid>
+			</item>
+		
+			<item>
+				<title>Полупрозрачный JPG</title>
+				
+				
+					<description>&lt;p&gt;Попался мне на глаза достаточно интересный способ значительно уменьшить размер большого полупрозрачного PNG.&lt;br&gt;
+Начнем с [примера][1].  PNG &amp;#8211; 334Кб, aJPG &amp;#8211; 74 Кб.&lt;br&gt;
+Суть приёма в следующем.&lt;br&gt;
+&amp;lt;!--more--&amp;gt;&lt;/p&gt;
+</description>
+				
+				<pubDate>Tue, 22 Nov 2011 00:00:00 +0200</pubDate>
+				<link>http://banzalik.ru/transparent-jpg/</link>
+				<guid isPermaLink="true">http://banzalik.ru/transparent-jpg/</guid>
+			</item>
+		
+			<item>
+				<title>Кеширование jQuery за счет источников трафика.</title>
+				
+				
+					<description>&lt;p&gt;Многие сайты львиную долю посетителей получают за счет источников переходов, это могут быть сайты, поисковые системы, каталоги, вики.&lt;/p&gt;
+</description>
+				
+				<pubDate>Mon, 27 Dec 2010 00:00:00 +0200</pubDate>
+				<link>http://banzalik.ru/keshirovanie-skriptov-za-schet-istochnika-trafika/</link>
+				<guid isPermaLink="true">http://banzalik.ru/keshirovanie-skriptov-za-schet-istochnika-trafika/</guid>
+			</item>
+		
+			<item>
+				<title>Не все теги одинаково полезны</title>
+				
+				
+					<description>&lt;p&gt;Решил померять как быстро отрисовываются теги без применения к ним каких-либо стилей.&lt;/p&gt;
+</description>
+				
+				<pubDate>Sun, 16 May 2010 00:00:00 +0300</pubDate>
+				<link>http://banzalik.ru/tags-reflow/</link>
+				<guid isPermaLink="true">http://banzalik.ru/tags-reflow/</guid>
+			</item>
+		
+			<item>
+				<title>CSScomb в WebStorm – продолжение</title>
+				
+				
+					<description>&lt;p&gt;В продолжение моей вчерашней записи про [CSScomb в WebStorm][1] спешу поделиться более усовершенствованным скриптом.&lt;/p&gt;
+</description>
+				
+				<pubDate>Tue, 06 Apr 2010 00:00:00 +0300</pubDate>
+				<link>http://banzalik.ru/csscomb-in-webstorm-part2/</link>
+				<guid isPermaLink="true">http://banzalik.ru/csscomb-in-webstorm-part2/</guid>
+			</item>
+		
+			<item>
+				<title>CSScomb в WebStorm &amp;#8211; Сортировка CSS свойств</title>
+				
+				
+					<description>&lt;p&gt;Есть хороший проект называется [CSScomb][1] от [Вячеслава Олиянчука aka miripiruni][2]. Суть его в том, что он сортирует CSS свойста согласно определенному порядку, который мы выставляем самостоятельно. Уже есть плагины для Coda и TextMate. Однако я пользуюсь WebStorm (WebIde) и очень захотелось подобного функционала именно в нем. Ну что ж сказано &amp;#8211; сделано &lt;img src=&#39;http://banzalik.ru/wp-includes/images/smilies/icon_smile.gif&#39; alt=&#39;:)&#39; class=&#39;wp-smiley&#39; /&gt;&lt;br&gt;
+&amp;lt;!--more--&amp;gt;&lt;/p&gt;
+</description>
+				
+				<pubDate>Mon, 05 Apr 2010 00:00:00 +0300</pubDate>
+				<link>http://banzalik.ru/csscomb-in-webstorm/</link>
+				<guid isPermaLink="true">http://banzalik.ru/csscomb-in-webstorm/</guid>
+			</item>
+		
+			<item>
+				<title>Фильтры в IE8</title>
+				
+				
+					<description>&lt;p&gt;Больше всего камней в IE8, со стороны разработчиков, летело из-за того, что в нем не работали фильтры, которые понимали IE6-IE7.&lt;br&gt;
+Однако это не так, IE8 (в режиме IE=EmulateIE8) умеет отрабатывать фильтры.&lt;/p&gt;
+</description>
+				
+				<pubDate>Wed, 31 Mar 2010 00:00:00 +0300</pubDate>
+				<link>http://banzalik.ru/filters-in-ie8/</link>
+				<guid isPermaLink="true">http://banzalik.ru/filters-in-ie8/</guid>
+			</item>
+		
+			<item>
+				<title>Произвольный цвет фона у PNG24 с прозрачностью в IE6</title>
+				
+				
+					<description>&lt;p&gt;Все знают про проблему полупрозрачных PNG-24 в IE6, выглядит она так&lt;/p&gt;
+</description>
+				
+				<pubDate>Tue, 16 Feb 2010 00:00:00 +0200</pubDate>
+				<link>http://banzalik.ru/png24-ie6-bg/</link>
+				<guid isPermaLink="true">http://banzalik.ru/png24-ie6-bg/</guid>
+			</item>
+		
+			<item>
+				<title>Веб-шрифты vs. Шрифты для веба и IE6</title>
+				
+				
+					<description>&lt;p&gt;Так получилось, что я использовал технику вставки шрифтов в страницу еще до выступления Вадима в Минске, поэтому решил написать небольшое дополнение к выступлению [Вадима Макеева][1] &amp;#8211; &amp;#8220;[Веб-шрифты vs. Шрифты для веба.][2]&amp;#8220;.&lt;/p&gt;
+</description>
+				
+				<pubDate>Sat, 05 Dec 2009 00:00:00 +0200</pubDate>
+				<link>http://banzalik.ru/fonts-ie6/</link>
+				<guid isPermaLink="true">http://banzalik.ru/fonts-ie6/</guid>
+			</item>
+		
+	</channel>
+</rss>

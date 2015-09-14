@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en-us" class="no-js">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <link type="text/plain" rel="author" href="http://banzalik.ru/humans.txt" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <!-- Optimized for search engines -->
+  <meta name="description" content="Решил померять как быстро отрисовываются теги без применения к ним каких-либо стилей.">
+
+  
+
+  <link rel="canonical" href="http://banzalik.ru/tags-reflow/">
+
+  
+    <link rel="next" href="http://banzalik.ru/keshirovanie-skriptov-za-schet-istochnika-trafika/" title="Кеширование jQuery за счет источников трафика.">
+  
+
+  
+    <link rel="prev" href="http://banzalik.ru/csscomb-in-webstorm-part2/" title="CSScomb в WebStorm – продолжение">
+  
+
+  <!-- Twitter card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@banzalik">
+  <meta name="twitter:creator" content="@banzalik">
+  <meta name="twitter:title" content="Не все теги одинаково полезны">
+  <meta name="twitter:description" content="Решил померять как быстро отрисовываются теги без применения к ним каких-либо стилей.">
+  <meta name="twitter:image" content="http://banzalik.ru/your site icon path">
+  <meta name="twitter:url" content="http://banzalik.ru/tags-reflow/">
+
+  <!-- Open graph -->
+  <meta property="og:title" content="Не все теги одинаково полезны">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="http://banzalik.ru/tags-reflow/">
+  <meta property="og:image" content="http://banzalik.ru/your site icon path">
+  <meta property="og:description" content="Решил померять как быстро отрисовываются теги без применения к ним каких-либо стилей.">
+  <meta property="og:site_name" content="HTML/CSS Evangelist">
+  <meta property="og:locale" content="ru_RU">
+
+  
+    <meta property="article:modified_time" content="2010-05-16T00:00:00+03:00">
+    <meta property="article:published_time" content="2010-05-16T00:00:00+03:00">
+    <meta property="article:author" content="https://www.facebook.com/banzalik">
+    
+      <meta property="og:see_also" content="http://banzalik.ru/social-app-with-be/">
+    
+      <meta property="og:see_also" content="http://banzalik.ru/zoom-ie-scroll/">
+    
+      <meta property="og:see_also" content="http://banzalik.ru/transparent-jpg/">
+    
+  
+
+  
+    
+    <meta property="article:section" content="css">
+    
+  
+
+  
+    
+  
+
+  <meta property="fb:admins" content="">
+  <meta property="fb:app_id" content="">
+
+  <title>
+    
+      Не все теги одинаково полезны &middot; Размышления на тему Front-end
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/css/main.css">
+
+  
+
+  <!-- Fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Source+Serif+Pro:700,400' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Roboto:100,300' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans:700' rel='stylesheet' type='text/css'>
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/assets/images/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
+
+  <!-- modernizer -->
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+  <!--[if lt IE 9]>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <![endif]-->
+
+  <!--[if (gte IE 6)&(lte IE 8)]>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.3.0/respond.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+  <![endif]-->
+</head>
+
+
+  <body>
+    
+      <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+      <nav role="navigation" class="sidebar sidebar--right">
+  <a href="/" class="textLogo textLogo--white textLogo--sidebar">HTML/CSS Evangelist</a>
+  <ul class="sidebar-recentPosts">
+    
+      
+      <li>
+        
+          <a href="/social-app-with-be/" class="sidebar-recentPosts-image-wrapper">
+            <img src="/assets/images/thumbnail/bem.png" style="" alt="">
+          </a>
+        
+        <a href="/social-app-with-be/">Приложения для соцсетей. Универсальные приложения на БЭМ.</a>
+        <div class="postMeta">12 Jul 2012</div>
+      </li>
+      
+    
+      
+      <li>
+        
+        <a href="/zoom-ie-scroll/">Еще один способ использования свойства zoom</a>
+        <div class="postMeta">10 Dec 2011</div>
+      </li>
+      
+    
+      
+      <li>
+        
+        <a href="/transparent-jpg/">Полупрозрачный JPG</a>
+        <div class="postMeta">22 Nov 2011</div>
+      </li>
+      
+    
+      
+      <li>
+        
+        <a href="/keshirovanie-skriptov-za-schet-istochnika-trafika/">Кеширование jQuery за счет источников трафика.</a>
+        <div class="postMeta">27 Dec 2010</div>
+      </li>
+      
+    
+      
+        <!-- exclude current post -->
+      
+    
+      
+      <li>
+        
+        <a href="/csscomb-in-webstorm-part2/">CSScomb в WebStorm – продолжение</a>
+        <div class="postMeta">06 Apr 2010</div>
+      </li>
+      
+    
+      
+      <li>
+        
+        <a href="/csscomb-in-webstorm/">CSScomb в WebStorm &#8211; Сортировка CSS свойств</a>
+        <div class="postMeta">05 Apr 2010</div>
+      </li>
+      
+    
+      
+      <li>
+        
+        <a href="/filters-in-ie8/">Фильтры в IE8</a>
+        <div class="postMeta">31 Mar 2010</div>
+      </li>
+      
+    
+      
+      <li>
+        
+        <a href="/png24-ie6-bg/">Произвольный цвет фона у PNG24 с прозрачностью в IE6</a>
+        <div class="postMeta">16 Feb 2010</div>
+      </li>
+      
+    
+      
+      <li>
+        
+        <a href="/fonts-ie6/">Веб-шрифты vs. Шрифты для веба и IE6</a>
+        <div class="postMeta">05 Dec 2009</div>
+      </li>
+      
+    
+  </ul>
+</nav>
+
+      <nav class="menuWrapper">
+  <ul class="popover popover--menu">
+    <li class="menu-avatar">
+      <a href="/" class="brandLogo brandLogo--small
+      
+      ">HTML/CSS Evangelist</a>
+      <ul class="list list--avatarMenu hidden">
+        <li class="list-item"><a href="">Twitter</a></li>
+        <li class="list-item"><a href="">LinkedIn</a></li>
+        <li class="list-item"><a href="">Quora</a></li>
+        <li class="list-item"><a href="">Dribbble</a></li>
+        <li class="list-item"><a href="">Kiva</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+    
+
+    <article class="postWrapper">
+  <section class="section--first is-darkBackgrounded u-table">
+    <div class="section-backgroundImage">
+
+      
+
+    </div>
+    <div class="section-gradient
+    
+    "></div>
+    <div class="section-title is-darkBackgrounded u-tableCell u-verticalAlignMiddle">
+      <div class="container">
+        <h2>Не все теги одинаково полезны</h2>
+        <div class="postMeta-wrapper">
+          <ul class="postMeta">
+            <li class="postMeta-datetime">
+              <time datetime="2010-05-16 00:00:00 +0300">
+                16 May 2010
+              </time>
+            </li>
+            <li class="postMeta-author">
+              By Александр Бойченко
+            </li>
+            <li class="postMeta-tags">
+              csshtmlСтатьи
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section--last">
+    <div class="container container--content">
+      <div class="content-body">
+
+        <p>Решил померять как быстро отрисовываются теги без применения к ним каких-либо стилей.</p>
+
+<p>Суть теста &#8211; генерируем 10к тегов на одной странице и меряем reflow.</p>
+
+<p>Результаты оказались очень любопытные.</p>
+
+<p>Пока даю весьма скромную таблицу, с малым набором тегов.</p>
+
+<table border="1">
+  <tr>
+    <th>
+      Тег
+    </th>
+    
+    <th>
+      Safari 4.0.5 (mac)
+    </th>
+    
+    <th>
+      FF 3.6.3 (mac)
+    </th>
+    
+    <th>
+      Opera 10.53 (mac)
+    </th>
+    
+    <th>
+      iPad
+    </th>
+  </tr>
+  
+  <tr>
+    <td style="text-align: center;">
+      <a href="http://banzalik.ru/labs/tags-rm/index.php?i=10000&tag=div&reflow-meter">div</a>
+    </td>
+    
+    <td style="text-align: center;">
+      173
+    </td>
+    
+    <td style="text-align: center;">
+      270
+    </td>
+    
+    <td style="text-align: center;">
+      218
+    </td>
+    
+    <td style="text-align: center;">
+      710
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      <a href="http://banzalik.ru/labs/tags-rm/index.php?i=10000&tag=span&reflow-meter">span</a>
+    </td>
+    
+    <td style="text-align: center;">
+      52
+    </td>
+    
+    <td style="text-align: center;">
+      608
+    </td>
+    
+    <td style="text-align: center;">
+      113
+    </td>
+    
+    <td style="text-align: center;">
+      294
+    </td>
+  </tr>
+  
+  <tr>
+    <td style="text-align: center;">
+      <a href="http://banzalik.ru/labs/tags-rm/index.php?i=10000&tag=p&reflow-meter">p</a>
+    </td>
+    
+    <td style="text-align: center;">
+      173
+    </td>
+    
+    <td style="text-align: center;">
+      287
+    </td>
+    
+    <td style="text-align: center;">
+      235
+    </td>
+    
+    <td style="text-align: center;">
+      711
+    </td>
+  </tr>
+  
+  <tr>
+    <td style="text-align: center;">
+      <a href="http://banzalik.ru/labs/tags-rm/index.php?i=10000&tag=b&reflow-meter">b</a>
+    </td>
+    
+    <td style="text-align: center;">
+      50
+    </td>
+    
+    <td style="text-align: center;">
+      607
+    </td>
+    
+    <td style="text-align: center;">
+      116
+    </td>
+    
+    <td style="text-align: center;">
+      299
+    </td>
+  </tr>
+  
+  <tr>
+    <td style="text-align: center;">
+      <a href="http://banzalik.ru/labs/tags-rm/index.php?i=10000&tag=i&reflow-meter">i</a>
+    </td>
+    
+    <td style="text-align: center;">
+      50
+    </td>
+    
+    <td style="text-align: center;">
+      600
+    </td>
+    
+    <td style="text-align: center;">
+      1164
+    </td>
+    
+    <td style="text-align: center;">
+      297
+    </td>
+  </tr>
+</table>
+
+<p>Очень странные результаты показал IE &#8211; почти нулевые рефлоу (поэтому пока не заполняю таблицу с результатами IE*)</p>
+
+<p>Вывод:</p>
+
+<ul>
+<li>в Opera и Safari inline элементы в 2 раза быстрее блочных</li>
+<li>в FF все наоборот, блочные быстрее инлайновых в 2 раза</li>
+<li>существую теги, которые серьезно влияют на рефлоу (например <strong>i</strong> в Опере и FF )</li>
+</ul>
+
+<p>Скоро проведу более детальное исследование + проверим скорость основных css свойств.</p>
+
+<p><strong>upd.</strong> имена тегов в таблице ведут на соответствующие тесты</p>
+
+
+      </div>
+    </div>
+    <hr class="u-clearHr"/>
+    <hr class="u-clearHr"/>
+    <hr/>
+    <div class="container container--content">
+      <div class="content-body">
+        <div class="content-comments">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+      /* * * CONFIGURATION VARIABLES * * */
+      var disqus_shortname = 'banzalik';
+
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</div>
+
+      </div>
+    </div>
+  </section>
+  <footer class="postFooter">
+    
+      <section class="section--prePost is-darkBackgrounded u-table">
+        <div class="section-backgroundImage section-backgroundImage--previousPage">
+          <img class="post-featuredImage"
+          
+          style="top:0" alt="">
+        </div>
+        <div class="section-gradient
+        
+        "></div>
+        <div class="section-title u-tableCell u-verticalAlignMiddle">
+          <div class="container">
+            <h4>Next story:</h4>
+            <a class="prev" href="/csscomb-in-webstorm-part2/">
+              <h2>CSScomb в WebStorm – продолжение</h2>
+            </a>
+          </div>
+        </div>
+      </section>
+    
+  </footer>
+</article>
+
+<div class="modal-toggle-group animate scaleIn">
+  <div class="modal-toggle-bubbleShadow"></div>
+  <div class="modal-toggle-bubble"></div>
+  <div class="modal-toggle-wrapper"></div>
+  <div class="modal-toggle-close-wrapper">
+    <div class="modal-toggle-close"></div>
+  </div>
+</div>
+
+<div class="fullscreenModal u-table">
+  <div class="u-tableCell u-verticalAlignMiddle">
+    <h2 class="h2--shareTitle">Share this story</h2>
+    <ul class="shareWrapper">
+      <li><a class="shareButton shareButton--twitter" href="https://twitter.com/intent/tweet?text=Не все теги одинаково полезны by @VincentChan&url=http%3A%2F%2Fbanzalik.ru%2Ftags-reflow%2F" target="_blank"></a></li>
+      <li><a class="shareButton shareButton--facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fbanzalik.ru%2Ftags-reflow%2F" target="_blank"></a></li>
+      <li><a class="shareButton shareButton--linkedin" href="https://www.linkedin.com/shareArticle
+?mini=true&url=http%3A%2F%2Fbanzalik.ru%2Ftags-reflow%2F&title=Не все теги одинаково полезны"  target="_blank"></a></li>
+      <li><a class="shareButton shareButton--buffer" href="https://buffer.com/add?text=Не все теги одинаково полезны by @VincentChan&url=http%3A%2F%2Fbanzalik.ru%2Ftags-reflow%2F" target="_blank"></a></li>
+      <li><a class="shareButton shareButton--hackernews" href="http://news.ycombinator.com/submitlink?u=http%3A%2F%2Fbanzalik.ru%2Ftags-reflow%2F&t=Не все теги одинаково полезны" target="_blank"></a></li>
+      <li><a class="shareButton shareButton--pocket" href="https://getpocket.com/save?url=http%3A%2F%2Fbanzalik.ru%2Ftags-reflow%2F&title=Не все теги одинаково полезны" target="_blank"></a></li>
+    </ul>
+  </div>
+</div>
+
+
+
+    
+      <label for="sidebar-checkbox" class="sidebar-toggle-wrapper">
+  <div class="sidebar-toggle"></div>
+</label>
+
+    
+
+    
+
+    <!-- Javascript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="/assets/javascripts/imagesloaded.pkgd.min.js"></script>
+
+
+
+<script>
+  $(document).ready(function(){
+
+    // Featured image loaded behavior
+    $('.section-backgroundImage img').imagesLoaded()
+      .done( function( instance ) {
+        $('.post-featuredImage').addClass('is-loaded');
+      });
+
+    // Modal toggle behavior
+    $('.modal-toggle-wrapper').click(function() {
+    	$(this).toggleClass('active');
+      $('.modal-toggle-bubble').toggleClass('active');
+    	$('.modal-toggle-bubbleShadow').toggleClass('active');
+      $('.modal-toggle-close-wrapper').toggleClass('active');
+      $('.fullscreenModal').toggleClass('active');
+    });
+
+    // Prevent default anchor event and make a share popup
+    $.fn.sharePopup = function (e, intWidth, intHeight, blnResize) {
+
+      e.preventDefault();
+      intWidth = intWidth || '750';
+      intHeight = intHeight || '500';
+      strResize = (blnResize ? 'yes' : 'no');
+
+      //// Set title and open popup with focus on it
+      var strTitle = ((typeof this.attr('title') !== 'undefined') ? this.attr('title') : 'Social Share'),
+          strParam = 'width=' + intWidth + ',height=' + intHeight + ',resizable=' + strResize,
+          objWindow = window.open(this.attr('href'), strTitle, strParam).focus();
+    }
+
+    $('.shareButton').on("click", function(e) {
+      $(this).sharePopup(e);
+    });
+  });
+
+  // Show modal toggle after scrolling 300px
+  $(document).scroll(function() {
+    $('.modal-toggle-group').toggleClass('active', $(document).scrollTop() >= 300);
+  });
+</script>
+
+  </body>
+</html>

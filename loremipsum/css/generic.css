@@ -1,0 +1,112 @@
+/* MAIN TYPOGRAPHY */
+html {font-size: 62.5%; font-family:  helvetica, arial, sans-serif;}
+strong, th, thead td, h1, h2, h3, h4, h5, h6 {font-weight: bold;}
+cite, em, dfn {font-style: italic;}
+code, kbd, samp, pre, tt, var {font-size: 92%; font-family: courier, monaco, "Lucida Console", mono-space;}
+textarea, select, option {font-family: tahoma, courier, monaco, "Lucida Console", mono-space; font-size:100%;}
+input[type='text'], input[type='password'] {font-family: tahoma, courier, monaco, "Lucida Console", mono-space; font-size:100%;}
+del {text-decoration: line-through; color: #666;}
+ins, dfn {border-bottom: 1px solid #ccc;}
+small, sup, sub {font-size: 85%;}
+abbr, acronym {text-transform: uppercase; font-size: 85%; letter-spacing: .1em;}
+a abbr, a acronym {border: none;}
+abbr[title], acronym[title], dfn[title] {cursor: help; border-bottom: 1px solid #ccc;}
+sup {vertical-align: super;}
+sub {vertical-align: sub;}
+
+/* QUOTES */
+blockquote {border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; color: #666;}
+blockquote *:first-child:before {content: "\201C";} /* More characters http://jrgraphix.net/research/unicode_blocks.php?block=48 */
+blockquote *:first-child:after {content: "\201D";} /* More characters http://jrgraphix.net/research/unicode_blocks.php?block=48 */
+
+/* language specific quotes! */
+q {quotes: "\201C" "\201D" "\2018" "\2019";} /* More characters http://jrgraphix.net/research/unicode_blocks.php?block=48 */
+
+
+/* FORMS */
+fieldset {border: 1px solid #ccc;}
+legend {background: #fff;}
+textarea, input[type='text'], input[type='password'], select {border: 1px solid #ccc; background: #fff;}
+textarea:hover, input[type='text']:hover, input[type='password']:hover, select:hover {border-color: #aaa;}
+textarea:focus, input[type='text']:focus, input[type='password']:focus, select:focus {border-color: #888; outline: 2px solid #ffffaa;}
+input, select {cursor: pointer;}
+input[type='text'], input[type='password'] {cursor: text;}
+input {vertical-align:middle;}
+
+/*
+-----------------------------
+CONTENT ONLY
+-----------------------------
+*/
+
+/* BASE SIZES */
+body {font-size: 1.2em; line-height: 1.6em; background:#FFF; color:#000 }
+h1 {font-size: 1.6em;}
+h2 {font-size: 1.5em;}
+h3 {font-size: 1.4em;}
+h4 {font-size: 1.3em;}
+h5 {font-size: 1.2em;}
+h6 {font-size: 1em;}
+
+/* HR */
+hr {display: block; background: #aaa; color: #aaa; width: 100%; height: 1px; border: none;}
+
+/* LISTS */
+/* ul {margin:0; padding:0; list-style:none} ul li {text-indent: 0; margin: 0; padding:0; list-style:none;} ul li:before {content: "";} */
+ul li {text-indent: -.85em; margin-left: .85em;}
+ul li:before {content: "\2022\00a0\00a0";} /* More characters http://jrgraphix.net/research/unicode_blocks.php?block=48 */
+ol {list-style-position: outside; list-style-type: decimal;}
+dt {font-weight: bold;}
+
+/* TABLES */
+table {border-top: 1px solid #ccc;  border-left: 1px solid #ccc;}
+th, td {border-bottom: 1px solid #ddd; border-right: 1px solid #ccc; vertical-align:top;}
+
+/* MARGINS & PADDINGS */
+blockquote *:first-child {margin: .8em 0;}
+hr, p, ul, ol, dl, pre, blockquote, address, table, form {margin-bottom: 1.6em;}
+p+p {margin-top: -.8em;}
+
+/* NOTE: Calulate header margins: TOP: 1.6em/size, BOTTOM: 1.6em/size/2 */
+h1 {margin: 1em 0 .5em;}
+h2 {margin: 1.07em 0 .535em;}
+h3 {margin: 1.14em 0 .57em;}
+h4 {margin: 1.23em 0 .615em;}
+h5 {margin: 1.33em 0 .67em;}
+h6 {margin: 1.6em 0 .8em;}
+th, td {padding: .8em;}
+caption {padding-bottom: .8em;} /* padding instead of margin for IE */
+blockquote {padding: 0 1em; margin: 1.6em 0;}
+fieldset {padding: 0 1em 1em 1em; margin: 1.6em 0;} /* padding-top is margin-top for fieldsets in Opera */
+legend {padding-left: .8em; padding-right: .8em;}
+legend+* {margin-top: 1em;} /* compensates for the opera margin bug */
+textarea, input {padding: .15em .4em .25em .4em;}
+input {margin:0.1em 0.3em 0.3em 0em}
+select {padding: .1em 0 0 .2em;}
+option {padding: 0 .4em;}
+ul {margin-left: 1.5em;}
+ol {margin-left: 2.35em;}
+ol ol, ul ol {margin-left: 2.5em;}
+form div {margin-bottom: .8em;}
+
+/* DT, DL, DD */
+/*dt, dl, dd {margin:0; font-weight:normal;} */
+dt {margin-top: .8em; margin-bottom: .4em;}
+
+
+/* COLORS */
+/* a:link, a:visited, a:hover, a:active, a:focus */
+a:link {text-decoration: underline; color: #36c;}
+a:visited {text-decoration: underline; color: #99c;}
+a:hover {text-decoration: underline; color: #c33;}
+a:active, a:focus {text-decoration: underline; color: #000;}
+code, pre {color: #c33;} /* very optional, but still useful. W3C uses about the same colors for codes */
+
+/* CLEARFIX */
+.clearfix:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; font-size:0;}
+.clearfix {display: inline-block;} /* for IE/Mac */
+html[xmlns] .clearfix {display: block;}
+
+/* IMG ALIGN */
+img[align=left] {float:left; margin:0 1em 1em 0}
+img[align=right] {float:right; margin:0 0 1em 1em}
